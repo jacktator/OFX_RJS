@@ -1,0 +1,12 @@
+/* The following block can be included in a custom.scss */
+
+/* make the customizations */
+$theme-colors: (
+  "primary": #e66c0d,
+  "secondary": #047DB1,
+);
+
+$font-family-base: ciutadella_rounded_regularRg, Helvetica, Arial, sans-serif;
+
+/* Include Bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";

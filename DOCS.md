@@ -40,8 +40,10 @@ Nice to Have:
 
 - [x] React (Dev)
 - [x] PropTypes (Dev)
-- [ ] [React Bootstrap](https://react-bootstrap.github.io/) (UI)
-- [ ] StyledComponents (UI)
-- [ ] Storybook (UI)
+- [x] [React Bootstrap](https://react-bootstrap.github.io/) (UI)
+- [x] [Bootstrap SASS Theme](https://react-bootstrap.github.io/getting-started/introduction) (UI)
+- [x] [Styled Component](https://www.styled-components.com/)
+- [ ] Redux
+- [ ] Unit Tests
 - [x] Netlify (CI & CD)
 - [ ] Snapshot (Testing)

@@ -1,15 +1,19 @@
 import React from 'react';
+import './App.theme.scss';
 import logo from './logo.svg';
-import './App.css';
+import {AppWrapper} from "./App.style";
+import {Alert} from "react-bootstrap";
 
-function App() {
-
-  if (!process.env.REACT_APP_API_URL) {
-    alert("Environment Variable `REACT_APP_API_URL` Missing!")
-  }
+const App = () => {
 
   return (
-    <div className="App">
+    <AppWrapper>
+      {
+        !process.env.REACT_APP_API_URL &&
+        <Alert variant={"primary"}>
+          Environment Variable `REACT_APP_API_URL` Missing!
+        </Alert>
+      }
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -24,8 +28,8 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </AppWrapper>
   );
-}
+};
 
 export default App;
