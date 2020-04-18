@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.theme.scss';
-import logo from './logo.svg';
 import {AppWrapper} from "./App.style";
 import {Alert} from "react-bootstrap";
+import QuickQuote from "./containers/QuickQuote";
 
 const App = () => {
 
@@ -14,20 +14,7 @@ const App = () => {
           Environment Variable `REACT_APP_API_URL` Missing!
         </Alert>
       }
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <QuickQuote/>
     </AppWrapper>
   );
 };

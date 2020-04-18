@@ -9,7 +9,7 @@
 
 React Application which requests Quote from OFX using Spot Rate.
 
-[Docs](./DOCS.md) | [Live Site](https://ofx.netlify.app/) | [UI Library](https://ofx.netlify.app/storybook/index.html)
+[Live Site](https://ofx.netlify.app/) | [Docs](./DOCS.md)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
