@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 /**
  * A Full list of OFX Supported Currencies
  *
@@ -91,7 +93,7 @@ const EXOTICS = [
     "name": "Bulgarian Lev"
   },
   {
-    "symbol": "CNY**",
+    "symbol": "CNY",
     "name": "Chinese Yuan Renminbi",
     "message": "** Business customers only"
   },

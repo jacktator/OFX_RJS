@@ -7,7 +7,7 @@ export const QuickQuoteWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   
-  height: 100vh;
+  height: 100%;
   
   margin: 32px;
 `;
