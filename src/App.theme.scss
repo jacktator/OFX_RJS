@@ -3,10 +3,12 @@
 /* make the customizations */
 $theme-colors: (
   "primary": #e66c0d,
-  "secondary": #047DB1,
+  "secondary": #e66c0d,
 );
 
 $font-family-base: ciutadella_rounded_regularRg, Helvetica, Arial, sans-serif;
+
+$btn-border-radius-lg: 20px;
 
 /* Include Bootstrap to set changes */
 @import "~bootstrap/scss/bootstrap";

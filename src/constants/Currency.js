@@ -4,74 +4,95 @@
  * Ideally the lists should be dynamically retrieved from API (Out of Code Test Scope)
  *
  * @docs https://www.ofx.com/en-au/faqs/what-currencies-can-i-transfer-with-ofx/
-*/
+ */
 
 const STANDARD = [
   {
-    "AED": "United Arab Emirates Dirham"
+    "symbol": "AED",
+    "name": "United Arab Emirates Dirham"
   },
   {
-    "AUD": "Australian Dollar"
+    "symbol": "AUD",
+    "name": "Australian Dollar"
   },
   {
-    "CAD": "Canadian Dollar"
+    "symbol": "CAD",
+    "name": "Canadian Dollar"
   },
   {
-    "CHF": "Swiss Franc"
+    "symbol": "CHF",
+    "name": "Swiss Franc"
   },
   {
-    "DKK": "Danish Kroner"
+    "symbol": "DKK",
+    "name": "Danish Kroner"
   },
   {
-    "EUR": "Euro"
+    "symbol": "EUR",
+    "name": "Euro"
   },
   {
-    "GBP": "Pound Sterling"
+    "symbol": "GBP",
+    "name": "Pound Sterling"
   },
   {
-    "HKD": "Hong Kong Dollar"
+    "symbol": "HKD",
+    "name": "Hong Kong Dollar"
   },
   {
-    "JPY": "Japanese Yen"
+    "symbol": "JPY",
+    "name": "Japanese Yen"
   },
   {
-    "MXN": "Mexican Peso"
+    "symbol": "MXN",
+    "name": "Mexican Peso"
   },
   {
-    "NOK": "Norwegian Kroner"
+    "symbol": "NOK",
+    "name": "Norwegian Kroner"
   },
   {
-    "NZD": "New Zealand Dollar"
+    "symbol": "NZD",
+    "name": "New Zealand Dollar"
   },
   {
-    "PLN": "Polish Zloty"
+    "symbol": "PLN",
+    "name": "Polish Zloty"
   },
   {
-    "SEK": "Swedish Kroner"
+    "symbol": "SEK",
+    "name": "Swedish Kroner"
   },
   {
-    "SGD": "Singapore Dollar"
+    "symbol": "SGD",
+    "name": "Singapore Dollar"
   },
   {
-    "THB": "Thailand Baht"
+    "symbol": "THB",
+    "name": "Thailand Baht"
   },
   {
-    "USD": "US Dollar"
+    "symbol": "USD",
+    "name": "US Dollar"
   },
   {
-    "ZAR": "South African Rand"
+    "symbol": "ZAR",
+    "name": "South African Rand"
   },
 ];
 
 const EXOTICS = [
   {
-    "AZN":"Azerbaijani Minat"
+    "symbol": "AZN",
+    "name": "Azerbaijani Minat"
   },
   {
-    "BGN":"Bulgarian Lev"
+    "symbol": "BGN",
+    "name": "Bulgarian Lev"
   },
   {
-    "CNY**":"Chinese Yuan Renminbi",
+    "symbol": "CNY**",
+    "name": "Chinese Yuan Renminbi",
     "message": "** Business customers only"
   },
 ]; // Omitted the rest for time's sake
