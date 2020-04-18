@@ -1,3 +1,16 @@
+# OFX Quotation App
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2cc5044b-c277-4cad-97bd-b90c41dd1536/deploy-status)](https://app.netlify.com/sites/ofx/deploys)
+<p>
+    <a href="https://twitter.com/intent/follow?screen_name=jacktator">
+        <img src="https://badgen.net/twitter/follow/jacktator?icon=twitter&label=%40jacktator" alt="Official Twitter Handle" />
+    </a>
+</p>
+
+React Application which requests Quote from OFX using Spot Rate.
+
+[Docs](./DOCS.md) | [Live Site](https://ofx.netlify.app/) | [UI Library](https://ofx.netlify.app/storybook/index.html)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

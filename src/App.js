@@ -3,6 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  if (!process.env.REACT_APP_API_URL) {
+    alert("Environment Variable `REACT_APP_API_URL` Missing!")
+  }
+
   return (
     <div className="App">
       <header className="App-header">
