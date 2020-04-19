@@ -14,26 +14,20 @@ Must Have:
 
 [x] Title
 [x] Quote Form
-    [x] First Name *
-    [x] Last Name *
-    [x] Email
-    [x] Telephone / Mobile
-    [x] From Currency *
-    [x] To Currency *
-    [x] Amount *
-    [x] Button
-    [x] Error Message
+    - First Name *
+    - Last Name *
+    - Email
+    - Telephone / Mobile
+    - From Currency *
+    - To Currency *
+    - Amount *
+    - Button
+    - Error Message
 [x] Quote Result
-    [x] OFX Customer Rate
-    [x] From
-    [x] To
-    [x] Button
-
-Nice to Have:
-
-- [x] PWA
-- [ ] Save Locally (With Historical Rate TimeStamp)
-- [ ] AutoSave (IndexDB)
+    - OFX Customer Rate
+    - From
+    - To
+    - Button
 
 
 ### Packages
@@ -49,3 +43,9 @@ Nice to Have:
 - [x] [Styled Component](https://www.styled-components.com/)
 - [x] [StoryBook](https://storybook.js.org/)
 - [x] Snapshot (Testing)
+
+## Future Plans
+
+- [x] PWA
+- [ ] Save Locally (With Historical Rate TimeStamp)
+- [ ] AutoSave (IndexDB)
