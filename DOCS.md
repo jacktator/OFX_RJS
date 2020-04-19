@@ -12,22 +12,22 @@ This project should have the following
 
 Must Have:
 
-[x] Title
-[x] Quote Form
-    - First Name *
-    - Last Name *
-    - Email
-    - Telephone / Mobile
-    - From Currency *
-    - To Currency *
-    - Amount *
-    - Button
-    - Error Message
-[x] Quote Result
-    - OFX Customer Rate
-    - From
-    - To
-    - Button
+- [x] Title
+- [x] Quote Form
+    - [x] First Name *
+    - [x] Last Name *
+    - [x] Email
+    - [x] Telephone / Mobile
+    - [x] From Currency *
+    - [x] To Currency *
+    - [x] Amount *
+    - [x] Button
+    - [x] Error Message
+- [x] Quote Result
+    - [x] OFX Customer Rate
+    - [x] From
+    - [x] To
+    - [x] Button
 
 
 ### Packages
