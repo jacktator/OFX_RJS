@@ -1,12 +1,12 @@
-import defaultState from "./state";
+import initialState from "./state";
 import {
   UPDATE_FORM,
   REQUEST_QUOTE,
   SET_QUOTE,
   RESET
-} from "./actions"
+} from "./types"
 
-const reducer = (state, action) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case UPDATE_FORM:
       return {
@@ -18,7 +18,6 @@ const reducer = (state, action) => {
       return {
         ...state,
         loading: true,
-        result: null,
       };
 
     case SET_QUOTE:
@@ -29,7 +28,7 @@ const reducer = (state, action) => {
       };
 
     case RESET:
-      return defaultState;
+      return initialState;
 
     default:
       return state;

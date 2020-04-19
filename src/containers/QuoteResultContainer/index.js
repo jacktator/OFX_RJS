@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import PropTypes from 'prop-types';
 import API from "../../api/API";
-import {SET_QUOTE, RESET} from "../../store/actions";
+import {SET_QUOTE, RESET} from "../../store/types";
 import {useStoreContext} from "../../store/store";
 import QuoteResult from "../../components/QuoteResult";
 

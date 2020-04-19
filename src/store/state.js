@@ -1,4 +1,4 @@
-const defaultState = {
+const initialState = {
   loading: false,
   firstName: "",
   lastName: "",
@@ -10,4 +10,4 @@ const defaultState = {
   result: null,
 };
 
-export default defaultState;
+export default initialState;
