@@ -5,7 +5,7 @@
 This project should have the following
 - [Live Site](https://ofx.netlify.app/)
 - [Environment Variable](https://docs.netlify.com/configure-builds/environment-variables/#build-metadata) (To Hide API Route)
-- [UI Library](https://ofx.netlify.app/storybook/index.html)
+- [UI Library](https://ofx.netlify.app/storybook)
 - [License](./LICENSE)
 
 ## Features by Priority
