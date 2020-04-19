@@ -10,18 +10,18 @@ export const FORM_DATA = {
 };
 
 export const RESULT_DATA = {
-  "CustomerRate": 0.5001,
-  "CustomerRateInverse": 1.9996000799840031993601279744,
-  "CustomerAmount": 5001.00,
-  "InterbankAmount": 5066.9953609723205479744166850,
+  "CustomerRate": 0.6212,
+  "CustomerRateInverse": 1.6097875080489375402446877012,
+  "CustomerAmount": 621.20,
+  "InterbankAmount": 633.22164307635959143351782730,
   "DefaultFee": 15.0000,
   "Fee": 0,
   "FeeFreeThreshold": 1.0000,
-  "InterbankRate": 0.5066995360972320547974416685,
-  "InverseInterbankRate": 1.9735561782872978149459759909,
-  "DeliveryCountry": "UK",
+  "InterbankRate": 0.6332216430763595914335178273,
+  "InverseInterbankRate": 1.5792258696997995026024109687,
+  "DeliveryCountry": "USA",
   "DeliveryTime": 0,
-  "ComparisonRate": 0.4813,
-  "ComparisonAmount": 188.0000,
+  "ComparisonRate": 0.6011,
+  "ComparisonAmount": 20.1000,
   "Message": "Sorry, min. transfer amount is AUD 250"
 };

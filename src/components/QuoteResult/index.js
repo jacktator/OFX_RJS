@@ -27,17 +27,17 @@ const QuoteResult = ({loading, from, to, amount, result, onReset}) => {
         <CustomerAmount>
           <Badge variant="secondary">{to}</Badge> {loading || !result ? "Loading..." : result.CustomerAmount}
         </CustomerAmount>
-        <p>You'll receive {loading || !result ? "Loading..." : result.CustomerAmount} {to}</p>
+        <p>{loading || !result ? "Loading..." : `You'll receive ${result.CustomerAmount} ${to}`} </p>
       </AmountSection>
       <ButtonSection className={"text-center"}>
-        <Button variant="primary"
-                disabled={loading}
-                size="lg"
-                as={Link}
-                to={"/"}
-                onClick={onReset}>
-          {loading ? 'Loading...' : 'New Quote'}
-        </Button>
+        <Link to={"/"}>
+          <Button variant="primary"
+                  disabled={loading}
+                  size="lg"
+                  onClick={onReset}>
+              {loading ? 'Loading...' : 'New Quote'}
+          </Button>
+        </Link>
       </ButtonSection>
     </QuoteResultWrapper>
   );
@@ -47,7 +47,7 @@ QuoteResult.propTypes = {
   loading: PropTypes.bool.isRequired,
   from: PropTypes.string.isRequired,
   to: PropTypes.string.isRequired,
-  amount: PropTypes.string.isRequired,
+  amount: PropTypes.number.isRequired,
   result: SpotRateResult,
   onReset: PropTypes.func.isRequired
 };
