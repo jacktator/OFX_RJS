@@ -1,5 +1,3 @@
-import PropTypes from "prop-types";
-
 /**
  * A Full list of OFX Supported Currencies
  *

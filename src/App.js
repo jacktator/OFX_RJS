@@ -1,34 +1,32 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import './App.theme.scss';
 import {AppWrapper} from "./App.style";
 import {Alert} from "react-bootstrap";
 import QuickQuote from "./containers/QuickQuote";
-import QuoteResult from "./components/QuoteResult";
-import {dummyResult} from "./utils/dummy/SpotRateResult";
+import {StoreProvider} from "./utils/store";
 
-const App = () => {
+const App = () => renderAppWithProvider();
 
-  return (
-    <AppWrapper>
+const renderAppWithProvider = () =>
+  <BrowserRouter>
+    <StoreProvider>
       {
-        !process.env.REACT_APP_API_URL &&
-        <Alert variant={"primary"}>
-          Environment Variable `REACT_APP_API_URL` Missing!
-        </Alert>
+        renderApp()
       }
-      <BrowserRouter>
-        <Switch>
-          <Route exact path={`/:from/:to/:amount`}
-                 render={({match: {params: {from, to, amount}}}) =>
-                   <QuoteResult from={from} to={to} amount={amount} result={dummyResult}/>
-                 }/>
-          <Route exact path="/" render={() => <QuickQuote />}/>
-          <Route render={() => <Redirect to="/" />} />
-        </Switch>
-      </BrowserRouter>
-    </AppWrapper>
-  );
-};
+    </StoreProvider>
+  </BrowserRouter>;
+
+const renderApp = () =>
+  <AppWrapper>
+    {
+      !process.env.REACT_APP_API_URL &&
+      <Alert variant={"primary"}>
+        Environment Variable `REACT_APP_API_URL` Missing!
+      </Alert>
+    }
+    <QuickQuote />
+  </AppWrapper>;
+
 
 export default App;

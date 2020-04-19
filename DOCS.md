@@ -38,13 +38,12 @@ Nice to Have:
 ### Packages
 
 - [x] [React](http://reactjs.org/)
-- [ ] [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+- [x] [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 - [x] [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 - [x] [React Bootstrap](https://react-bootstrap.github.io/)
 - [x] [Bootstrap SASS Theme](https://react-bootstrap.github.io/getting-started/introduction) (UI)
 - [x] [Styled Component](https://www.styled-components.com/)
 - [x] [React Router](https://github.com/ReactTraining/react-router)
-- [ ] Redux
 - [ ] Unit Tests
 - [x] Netlify (CI & CD)
 - [ ] Snapshot (Testing)
