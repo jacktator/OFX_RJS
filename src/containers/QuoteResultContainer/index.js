@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
 import PropTypes from 'prop-types';
 import API from "../../api/API";
-import {SET_QUOTE, RESET} from "../../store/types";
 import {useStoreContext} from "../../store/store";
 import QuoteResult from "../../components/QuoteResult";
+import * as actions from "../../store/actions";
 
 const QuoteResultContainer = ({from, to, amount}) => {
 
@@ -18,11 +18,11 @@ const QuoteResultContainer = ({from, to, amount}) => {
     // Deliberate using from, to, amount from props (from route) rather than state
     // This is to ensure, even if use refresh/revisit the page, or visit a different route, the data is always correct
     API.getQuote(from, to, amount)
-      .then(res => dispatch({ type: SET_QUOTE, result: res.data }))
+      .then(res => dispatch(actions.setQuote(res.data)))
       .catch(err => console.log(err));
   }, [from, to, amount, dispatch]);
 
-  const onReset = () => dispatch({ type: RESET});
+  const onReset = () => dispatch(actions.reset());
 
   return (
     <QuoteResult loading={loading}

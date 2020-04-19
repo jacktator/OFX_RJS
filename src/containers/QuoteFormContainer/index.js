@@ -2,7 +2,7 @@ import React from 'react';
 import QuoteForm from "../../components/QuoteForm";
 import {useStoreContext} from "../../store/store";
 import { useHistory } from "react-router-dom";
-import {UPDATE_FORM, REQUEST_QUOTE} from "../../store/types";
+import * as actions from "../../store/actions";
 
 const QuoteFormContainer = () => {
 
@@ -29,19 +29,12 @@ const QuoteFormContainer = () => {
 
     // TODO: Validation & Sanitization
 
-    dispatch({
-      type: UPDATE_FORM,
-      data: {
-        [name]: value
-      }
-    })
+    dispatch(actions.updateForm(name, value))
   };
 
   const submitForm = (event) => {
 
-    dispatch({
-      type: REQUEST_QUOTE
-    });
+    dispatch(actions.requestQuote());
 
     history.push(`/${from}/${to}/${amount}`);
   };

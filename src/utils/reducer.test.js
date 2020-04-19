@@ -3,7 +3,7 @@ import reducer from "../store/reducer";
 import {UPDATE_FORM, REQUEST_QUOTE, SET_QUOTE, RESET} from "../store/types";
 import {FORM_DATA, RESULT_DATA} from "./data";
 
-describe('OFX reducer', () => {
+describe('OFX reducers', () => {
   it('should return the initial state', () => {
     expect(reducer(undefined, {})).toEqual(initialState)
   });
