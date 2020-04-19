@@ -1,6 +1,6 @@
-import initialState from "../store/state";
-import reducer from "../store/reducer";
-import {UPDATE_FORM, REQUEST_QUOTE, SET_QUOTE, RESET} from "../store/types";
+import initialState from "../state/state";
+import reducer from "../state/reducer";
+import {UPDATE_FORM, REQUEST_QUOTE, SET_QUOTE, RESET} from "../state/types";
 import {FORM_DATA, RESULT_DATA} from "./data";
 
 describe('OFX reducers', () => {

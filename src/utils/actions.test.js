@@ -1,10 +1,10 @@
-import * as types from "../store/types";
-import * as actions from "../store/actions";
-import {UPDATE_FORM} from "../store/types";
+import * as types from "../state/types";
+import * as actions from "../state/actions";
+import {UPDATE_FORM} from "../state/types";
 import {FORM_DATA, RESULT_DATA} from "./data";
-import initialState from "../store/state";
-import {REQUEST_QUOTE} from "../store/types";
-import {RESET} from "../store/types";
+import initialState from "../state/state";
+import {REQUEST_QUOTE} from "../state/types";
+import {RESET} from "../state/types";
 
 describe('OFX actions', () => {
   it('should create an action to updateForm()', () => {

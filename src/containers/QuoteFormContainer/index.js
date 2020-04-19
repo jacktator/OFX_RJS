@@ -1,8 +1,8 @@
 import React from 'react';
 import QuoteForm from "../../components/QuoteForm";
-import {useStoreContext} from "../../store/store";
+import {useStoreContext} from "../../state/store";
 import { useHistory } from "react-router-dom";
-import * as actions from "../../store/actions";
+import * as actions from "../../state/actions";
 
 const QuoteFormContainer = () => {
 

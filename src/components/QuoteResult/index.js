@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {CustomerRate, QuoteResultWrapper, HeaderSection, AmountSection, CustomerAmount, ButtonSection} from "./style";
+import {QuoteResultWrapper, HeaderSection, AmountSection, CustomerAmount, ButtonSection} from "./style";
 import SpotRateResult from "../../constants/SpotRateResult";
 import {Badge, Button} from "react-bootstrap";
 import {Link} from "react-router-dom";
+import {CustomerRate} from "../CustomerRate/style";
 
 const QuoteResult = ({loading, from, to, amount, result, onReset}) => {
   return (

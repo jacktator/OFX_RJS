@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
 import PropTypes from 'prop-types';
 import API from "../../api/API";
-import {useStoreContext} from "../../store/store";
+import {useStoreContext} from "../../state/store";
 import QuoteResult from "../../components/QuoteResult";
-import * as actions from "../../store/actions";
+import * as actions from "../../state/actions";
 
 const QuoteResultContainer = ({from, to, amount}) => {
 

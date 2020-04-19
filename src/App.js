@@ -4,7 +4,7 @@ import './App.theme.scss';
 import {AppWrapper} from "./App.style";
 import {Alert} from "react-bootstrap";
 import QuickQuote from "./components/QuickQuote";
-import {StoreProvider} from "./store/store";
+import {StoreProvider} from "./state/store";
 
 const App = () => renderAppWithProvider();
 

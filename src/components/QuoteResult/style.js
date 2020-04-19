@@ -11,10 +11,6 @@ export const HeaderSection = styled.div`
   text-align: center;
 `;
 
-export const CustomerRate = styled.h1`
-  color: teal;
-`;
-
 export const AmountSection = styled.div`
   padding: 10px;
 `;
