@@ -199,7 +199,7 @@ QuoteForm.propTypes = {
   phoneNumber: PropTypes.string,
   from: PropTypes.string,
   to: PropTypes.string,
-  amount: PropTypes.string,
+  amount: PropTypes.number,
   loading: PropTypes.bool.isRequired,
   onChange: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,

@@ -1,8 +1,8 @@
 import React from 'react';
 import {Header, QuickQuoteWrapper} from "./style";
-import QuoteFormContainer from "../QuoteFormContainer";
+import QuoteFormContainer from "../../containers/QuoteFormContainer";
 import {Switch, Route, Redirect} from "react-router-dom";
-import QuoteResultContainer from "../QuoteResultContainer";
+import QuoteResultContainer from "../../containers/QuoteResultContainer";
 
 const QuickQuote = () =>
   <QuickQuoteWrapper>

@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
 import PropTypes from 'prop-types';
 import API from "../../api/API";
-import {SET_QUOTE} from "../../utils/actions";
-import {useStoreContext} from "../../utils/store";
+import {SET_QUOTE, RESET} from "../../store/actions";
+import {useStoreContext} from "../../store/store";
 import QuoteResult from "../../components/QuoteResult";
 
 const QuoteResultContainer = ({from, to, amount}) => {
@@ -22,12 +22,15 @@ const QuoteResultContainer = ({from, to, amount}) => {
       .catch(err => console.log(err));
   }, [from, to, amount, dispatch]);
 
+  const onReset = () => dispatch({ type: RESET});
+
   return (
     <QuoteResult loading={loading}
                  from={from}
                  to={to}
                  amount={amount}
-                 result={result}/>
+                 result={result}
+                 onReset={onReset}/>
   );
 };
 

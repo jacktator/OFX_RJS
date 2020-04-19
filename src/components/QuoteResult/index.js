@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {CustomerRate, QuoteResultWrapper, HeaderSection, AmountSection, CustomerAmount, ButtonSection} from "./style";
 import SpotRateResult from "../../constants/SpotRateResult";
-import {Badge, Button, Form} from "react-bootstrap";
+import {Badge, Button} from "react-bootstrap";
 import {Link} from "react-router-dom";
 
-const QuoteResult = ({loading, from, to, amount, result}) => {
+const QuoteResult = ({loading, from, to, amount, result, onReset}) => {
   return (
     <QuoteResultWrapper>
       <HeaderSection>
@@ -33,7 +33,8 @@ const QuoteResult = ({loading, from, to, amount, result}) => {
                 disabled={loading}
                 size="lg"
                 as={Link}
-                to={"/"}>
+                to={"/"}
+                onClick={onReset}>
           {loading ? 'Loading...' : 'New Quote'}
         </Button>
       </ButtonSection>
@@ -47,6 +48,7 @@ QuoteResult.propTypes = {
   to: PropTypes.string.isRequired,
   amount: PropTypes.string.isRequired,
   result: SpotRateResult,
+  onReset: PropTypes.func.isRequired
 };
 
 export default QuoteResult;

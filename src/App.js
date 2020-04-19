@@ -3,8 +3,8 @@ import { BrowserRouter } from "react-router-dom";
 import './App.theme.scss';
 import {AppWrapper} from "./App.style";
 import {Alert} from "react-bootstrap";
-import QuickQuote from "./containers/QuickQuote";
-import {StoreProvider} from "./utils/store";
+import QuickQuote from "./components/QuickQuote";
+import {StoreProvider} from "./store/store";
 
 const App = () => renderAppWithProvider();
 

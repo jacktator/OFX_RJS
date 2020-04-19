@@ -1,8 +1,8 @@
 import React from 'react';
 import QuoteForm from "../../components/QuoteForm";
-import {useStoreContext} from "../../utils/store";
+import {useStoreContext} from "../../store/store";
 import { useHistory } from "react-router-dom";
-import {UPDATE_FORM, REQUEST_QUOTE} from "../../utils/actions";
+import {UPDATE_FORM, REQUEST_QUOTE} from "../../store/actions";
 
 const QuoteFormContainer = () => {
 
@@ -26,6 +26,8 @@ const QuoteFormContainer = () => {
       name,
       value
     }  = event.target;
+
+    // TODO: Validation & Sanitization
 
     dispatch({
       type: UPDATE_FORM,
