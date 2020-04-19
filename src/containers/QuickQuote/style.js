@@ -9,7 +9,7 @@ export const QuickQuoteWrapper = styled.div`
   
   height: 100%;
   
-  margin: 32px;
+  margin: 24px;
 `;
 
 export const Header = styled.h3`
